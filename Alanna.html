@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feliz cumpleaños ♥</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="rain" class="layer"></canvas>
+<canvas id="stars" class="layer"></canvas>
+
+<div id="gate" class="scene"><button id="gateBtn">Tocar para abrir tu regalo 🎁</button></div>
+
+<div id="s1" class="scene"><div id="word" class="word"></div><div id="pheart"></div></div>
+
+<div id="s2" class="scene">
+  <div class="bday" id="bday"></div>
+  <div class="bgif" id="bgif"></div>
+  <div class="bname" id="bname"></div>
+  <div class="tiny-heart">❤</div>
+</div>
+
+<div id="s3" class="scene">
+  <div class="msg"><p id="msgText"></p></div>
+  <div class="book-stage">
+    <div class="book" id="book" role="button" tabindex="0" aria-label="Abrir el libro">
+      <div class="base l"></div><div class="base r"></div>
+    </div>
+  </div>
+  <p class="hint">Toca el libro</p>
+  <div class="book-nav">
+    <button id="prev" aria-label="Página anterior">‹</button>
+    <span id="pageNum"></span>
+    <button id="next" aria-label="Página siguiente">›</button>
+  </div>
+</div>
+
+<div id="s5" class="scene">
+  <div id="heart"></div>
+  <p class="final" id="final"></p>
+  <button class="again" onclick="location.reload()">Ver de nuevo</button>
+</div>
+
+<audio id="music" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
